@@ -57,6 +57,14 @@ nav a {
 }
 nav a:hover { color: var(--ink); }
 
+/* The icon artwork draws its own rounded frame, so no border or shadow here. */
+.app-icon {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 28px;
+}
+
 .label {
   font-family: var(--mono);
   font-size: 13px;
@@ -184,6 +192,7 @@ footer a { color: var(--muted); }
   .features { grid-template-columns: 1fr; gap: 28px; }
   .widget-row { grid-template-columns: 1fr; gap: 20px; }
   .contact { padding: 24px; }
+  .app-icon { width: 96px; height: 96px; }
   .email { display: block; margin: 16px 0 0; word-break: break-all; }
   nav a { margin-left: 14px; }
 }
