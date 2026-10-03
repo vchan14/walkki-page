@@ -26,6 +26,9 @@ body {
 
 a { color: var(--ink); text-underline-offset: 3px; }
 
+/* Keep #support and #signups from landing under the sticky header. */
+[id] { scroll-margin-top: 96px; }
+
 .wrap {
   max-width: 960px;
   margin: 0 auto;
@@ -38,6 +41,10 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 28px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--surface);
 }
 .wordmark {
   font-family: var(--mono);
