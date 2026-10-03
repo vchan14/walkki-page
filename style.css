@@ -56,6 +56,14 @@ nav a {
   margin-left: 20px;
 }
 nav a:hover { color: var(--ink); }
+nav a.nav-cta {
+  background: var(--ink);
+  color: var(--surface);
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 10px;
+}
+nav a.nav-cta:hover { color: var(--surface); }
 
 /* The icon artwork draws its own rounded frame, so no border or shadow here. */
 .app-icon {
@@ -213,4 +221,10 @@ footer a { color: var(--muted); }
   .app-icon { width: 96px; height: 96px; }
   .email { display: block; margin: 16px 0 0; word-break: break-all; }
   nav a { margin-left: 14px; }
+}
+
+/* No room for all three beside the wordmark on a phone. Support is further
+   down the page and Privacy is in the footer, so only the button stays. */
+@media (max-width: 480px) {
+  nav a:not(.nav-cta) { display: none; }
 }
