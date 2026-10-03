@@ -106,6 +106,7 @@ section { padding: 72px 0; border-top: 1px solid var(--rule); }
 /* The problem Walkki solves — a wider measure so the question reads as one thought */
 .why h2 { max-width: 24ch; }
 .why .lede { max-width: 46ch; }
+.beta .lede { max-width: 46ch; }
 
 /* Early access */
 .cta { margin-top: 32px; }
