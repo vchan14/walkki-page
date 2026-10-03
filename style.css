@@ -111,16 +111,6 @@ section { padding: 72px 0; border-top: 1px solid var(--rule); }
 /* Early access */
 .cta { margin-top: 32px; }
 .fine { font-size: 15px; color: var(--muted); max-width: 46ch; margin: 16px 0 0; }
-.beta-shot {
-  display: block;
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  margin-top: 56px;
-  border-radius: 28px;
-  border: 1px solid var(--rule);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
-}
 
 /* Screenshots */
 .shots {
